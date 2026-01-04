@@ -1,4 +1,4 @@
-# GFM Fiber - Internet Service Provider Landing Page
+# ZUHRAZA LLC - Internet Service Provider Landing Page
 
 A modern, responsive landing page for a fiber internet service provider. Features a clean design with smooth animations, mobile-friendly layout, and call-to-action elements.
 

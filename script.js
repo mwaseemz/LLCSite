@@ -210,5 +210,5 @@ formInputs.forEach(input => {
 });
 
 // Console message for developers
-console.log('%c🚀 GFM Fiber Website', 'color: #00D9FF; font-size: 20px; font-weight: bold;');
+console.log('%c🚀 ZUHRAZA LLC Website', 'color: #00D9FF; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤️ for fast, reliable internet', 'color: #666; font-size: 12px;');
