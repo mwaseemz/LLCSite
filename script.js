@@ -34,10 +34,34 @@ scrollToTopBtn.addEventListener('click', () => {
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
-if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', () => {
+if (mobileMenuBtn && navLinks) {
+    // Toggle menu on button click
+    mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
         navLinks.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    const navLinkItems = document.querySelectorAll('.nav-links a');
+    navLinkItems.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+        }
+    });
+
+    // Prevent menu from closing when clicking inside it
+    navLinks.addEventListener('click', (e) => {
+        e.stopPropagation();
     });
 }
 
