@@ -75,13 +75,11 @@ Edit the content directly in `index.html`. Key sections:
 - Contact information
 - Footer
 
-### Phone Number
+### Contact Information
 
-The phone number (888) 651-0253 appears throughout the site. Use find-and-replace to update it to your number.
-
-### Email Address
-
-Update `support@llc.co` to your actual support email address.
+- **Phone:** +1 (626) 621-0646
+- **Email:** Info@zuhrazallc.online
+- **Address:** 10601 Clarence Dr, Suite 250, Frisco, TX 75033
 
 ## Browser Support
 
